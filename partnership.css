@@ -40,3 +40,13 @@ footer>div.footer-contact{display:block}footer>div.footer-contact>a{display:inli
 
 #brief-output { margin-top: 24px; }
 #brief-output .text-link { min-height: 44px; }
+
+/* Retail Inc logo lockup */
+.retail-brand { flex-direction: column; gap: 0; }
+.retail-brand::after {
+  content: 'POINT OF SALE & PAYMENTS SOLUTIONS';
+  color: var(--ink);
+  font: 700 clamp(6px, 0.72vw, 9px)/1.3 'Montserrat', Arial, sans-serif;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+}
