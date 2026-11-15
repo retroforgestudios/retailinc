@@ -42,11 +42,16 @@ footer>div.footer-contact{display:block}footer>div.footer-contact>a{display:inli
 #brief-output .text-link { min-height: 44px; }
 
 /* Retail Inc logo lockup */
-.retail-brand { flex-direction: column; gap: 0; }
+.retail-brand { position: relative; }
 .retail-brand::after {
   content: 'POINT OF SALE & PAYMENTS SOLUTIONS';
+  position: absolute;
+  inset-block-start: 66%;
+  inset-inline-start: 31%;
   color: var(--ink);
-  font: 700 clamp(6px, 0.72vw, 9px)/1.3 'Montserrat', Arial, sans-serif;
-  letter-spacing: 0.12em;
+  font: 700 7.5px/1.2 'Montserrat', Arial, sans-serif;
+  letter-spacing: 0.08em;
   white-space: nowrap;
 }
+@media (max-width: 800px) { .retail-brand::after { font-size: 6px; } }
+@media (max-width: 360px) { .retail-brand::after { font-size: 5.25px; } }
